@@ -3,21 +3,21 @@
 
 // 1. Write a simple React component that prints 'I am a component' to the screen. Be sure to include all necessary imports, exports, etc...
 
-import React, { Component } from 'react'
-
-class Homework extends Component {
-  render() {
-      return (
-
-        <div><center>
-        <h2>Hi SunnyD! ... I am a component. =)</h2>
-        </center></div>
-
-      )
-  }
-}
-
-export default Homework
+// import React, { Component } from 'react'
+//
+// class Homework extends Component {
+//   render() {
+//       return (
+//
+//         <div><center>
+//         <h2>Hi SunnyD! ... I am a component. =)</h2>
+//         </center></div>
+//
+//       )
+//   }
+// }
+//
+// export default Homework
 
 
 
@@ -27,15 +27,14 @@ export default Homework
 var stuffArray = [42, 'Arthur Dent', 1978, 'Zaphod', 'Vogon', 'Marvin, the Paranoid Android']
 
 stuffArray.map(function(el, i){
-  console.log(el + " is at index: " + i)
+    console.log(el + " is at index: " + i)
 })
+
 
 // your for loop here, you can use the same stuffArray array
 
-var stuffArray = [42, 'Arthur Dent', 1978, 'Zaphod', 'Vogon', 'Marvin, the Paranoid Android']
-
 function hitchhiker(array) {
-  for(let i = 0; i < array.length; i++) {
+    for(let i = 0; i < array.length; i++) {
     console.log(array[i] + ' is at index: ' + array.indexOf(array[i]))
   }
 }
@@ -46,7 +45,11 @@ console.log(hitchhiker(stuffArray))
 // 3. Basic sorting: Find the cheapest price -- you are given a list of prices and need to find the single lowest price from the array.
 // Write a function that takes in an array of numbers, and returns the lowest price.
 
-var steal = function(array) {
-  array.sort(function(a, b){return a-b})
+var priceList = [54,74,25]
+
+steal = (array) => {
+    array = array.sort()
+    return array[0]
 }
-return steal[0]
+
+console.log(steal(priceList))

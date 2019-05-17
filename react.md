@@ -85,6 +85,9 @@ Try your best to answer each question on your own before looking up the answer o
 
     export default Recipes
 
+// Your Hint: Recipes in state is a list. What datatype works for representing a list?
+// Me: Oh, an object? (not primitive type but yeah) Not sure if I got something wrong here but I'll find the original challenge and re-do if critical. Otherwise gonna move on to another assessment. =)
+
 
 
 # 6. Name three html input types. (NOTE: text is the default type - so it doesn't count in this case)
